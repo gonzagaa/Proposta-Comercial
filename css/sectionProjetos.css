@@ -1,61 +1,69 @@
-#quemsou {
+#projetos .projeto,
+#projetos .header {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#projetos .header {
     background: var(--color-text);
-    overflow: hidden;
-    padding-block: 8rem;
-}
-
-#quemsou .content {
     display: flex;
-    flex-direction: column;
-    gap: 5rem;
+    justify-content: center;
+    align-items: center;
 }
 
-#quemsou .text {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    text-align: left;
-}
-
-#quemsou .text h2 {
+#projetos .header h2 {
     font-size: 4rem;
     margin-bottom: 2rem;
 }
 
-#quemsou .text h3 {
-    font-size: 1.8rem;
-    font-family: var(--interV);
-    margin-bottom: 1rem;
-}
-
-#quemsou .text p {
+#projetos .header p {
     font-family: var(--interV);
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 1.6;
 }
 
-#quemsou .text .redes-sociais {
-    margin-top: 2rem;
+#projetos .projeto {
+    background: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-#quemsou .text .redes-sociais p {
-    font-size: 1.8rem;
-    margin-bottom: .5rem;
+#projetos .projeto .content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
 }
 
-#quemsou .text .redes-sociais ion-icon {
-    font-size: 3rem;
-    color: #000;
-    margin-right: .5rem;
+#projetos .projeto .text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
 }
 
-#quemsou .image {
+#projetos .projeto .text h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+#projetos .projeto .text p {
+    font-family: var(--interV);
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+#projetos .projeto .image {
     display: flex;
     justify-content: start;
 }
 
-#quemsou .image img {
+#projetos .projeto .image img {
     width: 80%;
     border-radius: 1rem;
     aspect-ratio: 13/16;
@@ -66,46 +74,46 @@
     .wrapper {
         width: min(76rem, 100%);
     } 
-  }
+}
   
   @media (min-width: 1080px) {
       .wrapper {
         width: min(112rem, 100%);
-      }
-  
-      section#quemsou .content {
+    }
+
+    section#projetos .header h2 {
+        font-size: 8rem;
+    }
+
+    section#projetos .header p {
+        font-size: 2rem;
+    }
+
+    section#projetos .projeto .content {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
       }
 
-      section#quemsou .content .text h2 {
+    section#projetos .projeto .content .text h2 {
         font-size: 8rem;
       }
 
-      section#quemsou .content .text h3 {
+    section#projetos .projeto .content .text h3 {
         font-size: 3rem;
       }
 
-      section#quemsou .content .text p {
+    section#projetos .projeto .content .text p {
         font-size: 2rem;
       }
 
-      section#quemsou .content .text .redes-sociais p {
-        font-size: 2.5rem;
-      }
-
-      section#quemsou .content .text .redes-sociais ion-icon {
-        font-size: 4rem;
-      }
-
-      section#quemsou .image {
+    section#projetos .projeto .image {
         display: flex;
         justify-content: end;
     }
-  }
-  
-  @media (min-width: 1400px) {
+}
+
+@media (min-width: 1400px) {
     .wrapper {
       width: min(140rem, 100%);
     }

@@ -139,10 +139,6 @@ html {
       width: min(160rem, 100%);
     }
   }
-  
-  section {
-    padding-block: 10rem;
-  }
 
   /*====  scrollbar ============================ */
 ::-webkit-scrollbar {
