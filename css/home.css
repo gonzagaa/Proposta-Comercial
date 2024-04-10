@@ -74,10 +74,23 @@
 }
 
 #home .autor {
-  position: absolute;
+  position: fixed;
   bottom: 2rem;
   left: 50%;
   transform: translate(-50%);
+  z-index: 21;
+}
+
+#home::before {
+  content: '';
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  height: 10rem;
+  background: linear-gradient(to bottom, #00000000, #00000060 100%);
+  z-index: 20;
 }
 
 #home .autor p {
