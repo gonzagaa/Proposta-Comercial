@@ -7,24 +7,30 @@
 }
 
 #projetos .header {
-  z-index: 2;
-}
-
-#projetos .header {
-    background: var(--gradient-black);
+    background: var(--color-text);
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
+}
+
+#projetos .header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(to right, #00000000, #000, #00000000);
 }
 
 #projetos .header h2 {
-    color: var(--color-text);
     font-size: 4.5rem;
     margin-bottom: 1rem;
 }
 
 #projetos .header p {
-    color: var(--color-text);
     font-family: var(--interV);
     font-weight: 500;
     font-size: 1.6rem;
@@ -32,12 +38,13 @@
 }
 
 #projetos .projeto {
-    background: var(--color-text);
+    background: #000;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-top: 5px solid #000;
+    border-top: 5px solid #0000001f;
 }
 
 #projetos .projeto .content {
@@ -56,13 +63,33 @@
 #projetos .projeto .text h2 {
     font-size: 4rem;
     margin-bottom: 1rem;
+    color: var(--color-text);
 }
 
 #projetos .projeto .text p {
     font-family: var(--interV);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.6;
+    color: #8b8b8b;
+}
+
+#projetos .projeto .text a button {
+  font-family: var(--interV);
+  background: transparent;
+  font-weight: 400;
+  font-size: 1.4rem;
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  border: 1px solid var(--color-text);
+  color: var(--color-text);
+  margin-top: 2rem;
+  
+  transition: all 200ms ease-in-out;
+}
+
+#projetos .projeto .text a button:hover {
+  filter: brightness(1.2);
 }
 
 #projetos .projeto .image {
@@ -128,6 +155,8 @@
     section#projetos .projeto .image {
         display: flex;
         justify-content: end;
+
+        position: relative;
     }
 
     section#projetos .projeto .image img.desktop {
@@ -135,6 +164,12 @@
       aspect-ratio: 16/19;
       width: 100%;
       border-radius: 0;
+
+      transition: all 200ms ease-in-out;
+    }
+
+    section#projetos .projeto .image img.desktop:hover {
+      filter: brightness(1);
     }
 }
 
@@ -157,6 +192,7 @@
       bottom: 10%;
       box-shadow:  8px 8px 15px #11111100,
       -10px -10px 45px #171717d3;
+      display: none;
     }
   }
   

@@ -70,19 +70,12 @@ html {
     background-color: var(--black-900);
   }
 
-  .cursor-dot {
-    width: 5px;
-    height: 5px;
-    background: var(--gradient);
-  }
-
   .cursor-outline {
-    width: 30px;
-    height: 30px;
-    border: 2px solid #3cff007a;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #0000007a;
   }
 
-  .cursor-dot,
   .cursor-outline {
     position: fixed;
     top: 0;
@@ -93,9 +86,11 @@ html {
     pointer-events: none;
   }
 
-  button {
-    cursor: url("../assets/CURSOR\ LSB.svg"), auto;
+  body, 
+  html {
+    cursor: url("../assets/cursor\ white.svg"), auto;
   }
+
 
   ul {
     list-style: none;

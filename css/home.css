@@ -8,6 +8,8 @@
   flex-direction: column;
 
   transition: all 200ms ease-in-out;
+
+  cursor: url("../assets/cursor\ white.svg"), auto;
 }
 
 #home .content .principal {

@@ -2,6 +2,8 @@
     background: var(--color-text);
     overflow: hidden;
     padding-block: 8rem;
+
+    cursor: url("../assets/cursor\ black.svg"), auto;
 }
 
 #quemsou .content {

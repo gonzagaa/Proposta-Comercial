@@ -4,6 +4,8 @@
     overflow: hidden;
     z-index: 2;
     height: 100vh;
+
+    cursor: url("../assets/cursor\ white.svg"), auto;
 }
 
 #beneficios .content {
@@ -49,7 +51,13 @@
 #beneficios .cards .card span {
     font-size: 7rem;
     color: var(--color-text);
-    opacity: .2;
+    opacity: .05;
+}
+
+#beneficios .cards .card p {
+  font-family: var(--interV);
+  font-size: 1.6rem;
+  color: var(--color-text);
 }
 
 #beneficios span.points {
@@ -60,13 +68,6 @@
     bottom: -10rem;
     right: 10%;
 }
-
-#beneficios .cards .card p {
-    font-family: var(--interV);
-    font-size: 1.6rem;
-    color: var(--color-text);
-}
-
 
 @media (min-width: 768px) {
     .wrapper {
