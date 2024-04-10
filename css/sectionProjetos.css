@@ -37,6 +37,19 @@
     line-height: 1.6;
 }
 
+#projetos .header ion-icon {
+  margin-top: 2rem;
+  font-size: 4rem;
+
+  animation: arrow infinite ease-in-out 3s;
+}
+
+@keyframes arrow {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 #projetos .projeto {
     background: #000;
 
@@ -150,6 +163,7 @@
 
     section#projetos .projeto .content .text p {
         font-size: 2rem;
+        line-height: 1.8;
       }
 
     section#projetos .projeto .image {

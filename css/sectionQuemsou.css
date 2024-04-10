@@ -7,8 +7,9 @@
 }
 
 #quemsou .content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "A" "B";
     gap: 5rem;
 }
 
@@ -17,6 +18,8 @@
     flex-direction: column;
     align-items: start;
     text-align: left;
+
+    grid-area: B;
 }
 
 #quemsou .text h2 {
@@ -58,8 +61,8 @@
 }
 
 #quemsou .image img {
-    width: 80%;
-    border-radius: 1rem;
+    width: 100%;
+    border-radius: 2rem;
     aspect-ratio: 13/16;
     object-fit: cover;
 }
@@ -79,6 +82,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
+        grid-template-areas: initial;
+      }
+
+      section#quemsou .content .text {
+        grid-area: initial;
       }
 
       section#quemsou .content .text h2 {
@@ -104,6 +112,13 @@
       section#quemsou .image {
         display: flex;
         justify-content: end;
+    }
+
+      section#quemsou .image img {
+        width: 80%;
+        border-radius: 1rem;
+        aspect-ratio: 13/16;
+        object-fit: cover;
     }
   }
   
