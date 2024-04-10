@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LSB Digital - Agência de Marketing</title>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
@@ -73,14 +74,14 @@
         <div class="wrapper">
           <div class="content">
             <header>
-              <h2>Projetos</h2>
-              <p>Conheça algum dos projetos desenvolvidos por mim</p>
+              <h2 data-aos="fade-up">PROJETOS</h2>
+              <p data-aos="fade-up">Conheça algum dos projetos desenvolvidos por mim</p>
             </header>  
           </div>
         </div>
       </div>
 
-      <div class="projeto um">
+      <div  class="projeto um">
         <div class="wrapper">
           <div class="content">
             <div class="text">
@@ -89,13 +90,14 @@
             </div>
   
             <div class="image">
-              <img src="./assets/eu.jpg" alt="">
+              <img class="desktop" src="./assets/projetos/projeto mb capital desktoop.jpg" alt="">
+              <img class="mobile" src="./assets/projetos/projeto mb capital mobile.jpg" alt="">
             </div>
           </div>
         </div>
       </div>
 
-      <div class="projeto dois">
+      <div  class="projeto dois">
         <div class="wrapper">
           <div class="content">
             <div class="text">
@@ -104,20 +106,81 @@
             </div>
   
             <div class="image">
-              <img src="./assets/eu.jpg" alt="">
+              <img class="desktop" src="./assets/projetos/projeto lsb digital desktoop.jpg" alt="">
+              <img class="mobile" src="./assets/projetos/projeto lsb digital mobile.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projeto tres">
+        <div class="wrapper">
+          <div class="content">
+            <div class="text">
+              <h2>Furtado e Resende</h2>
+              <p>Desenvolvimento de um website intitucional com integração de blog para Furtado e Resede, um escritório de advocacia renomado na área de Direito Imobiliário.</p>
+            </div>
+  
+            <div class="image">
+              <img class="desktop" src="./assets/projetos/projeto furtado e resende desktoop.jpg" alt="">
+              <img class="mobile" src="./assets/projetos/projeto furtado e resende mobile.jpg" alt="">
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <a id="buttonWhatsapp" class="show" target="_blank" href="https://wa.link/ge6c2z">
-        <img src="./assets/whatsapp logo.webp" alt="">
-    </a>
+    <section id="beneficios">
+      <div class="wrapper">
+        <div class="content">
+          <div class="text">
+            <h2>Por que as empresas me procuram<span>?</span></h2>
+            <h3>existem muitos motivos;</h3>
+          </div>
+
+          <div class="cards">
+
+            <div class="card">
+              <span>1</span>
+              <p>Projetos fora do comúm.</p>
+            </div>
+
+            <div class="card">
+              <span>2</span>
+              <p>Design único, feito sob-medida.</p>
+            </div>
+
+            <div class="card">
+              <span>3</span>
+              <p>Atendimento focado no seu resultado.</p>
+            </div>
+
+            <div class="card">
+              <span>4</span>
+              <p>Resultados rápidos.</p>
+            </div>
+
+            <span class="points">...</span>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  
 
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init(
+       {
+        duration: 1000,
+       }
+      );
+    </script>
     <script src="particles.min.js"></script>
     <script>
         particlesJS(

@@ -7,18 +7,24 @@
 }
 
 #projetos .header {
-    background: var(--color-text);
+  z-index: 2;
+}
+
+#projetos .header {
+    background: var(--gradient-black);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #projetos .header h2 {
-    font-size: 4rem;
-    margin-bottom: 2rem;
+    color: var(--color-text);
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
 }
 
 #projetos .header p {
+    color: var(--color-text);
     font-family: var(--interV);
     font-weight: 500;
     font-size: 1.6rem;
@@ -26,11 +32,15 @@
 }
 
 #projetos .projeto {
-    background: #1b1b1b;
+    background: var(--color-text);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    -webkit-box-shadow: 0px -19px 100px 11px rgba(0,0,0,0.20);
+    -moz-box-shadow: 0px -19px 100px 11px rgba(0,0,0,0.20);
+    box-shadow: 0px -19px 100px 11px rgba(0,0,0,0.20);
 }
 
 #projetos .projeto .content {
@@ -48,7 +58,7 @@
 
 #projetos .projeto .text h2 {
     font-size: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 #projetos .projeto .text p {
@@ -61,13 +71,24 @@
 #projetos .projeto .image {
     display: flex;
     justify-content: start;
+    position: relative;
 }
 
-#projetos .projeto .image img {
+#projetos .projeto .image img.desktop {
     width: 80%;
     border-radius: 1rem;
     aspect-ratio: 13/16;
     object-fit: cover;
+}
+
+#projetos .projeto .image img.mobile {
+  position: absolute;
+  right: 0;
+  width: 30%;
+  bottom: 10%;
+  border-radius: 1rem;
+  box-shadow:  4px 4px 15px #11111169,
+             -4px -4px 15px #1717177d;
 }
 
 @media (min-width: 768px) {
@@ -81,8 +102,8 @@
         width: min(112rem, 100%);
     }
 
-    section#projetos .header h2 {
-        font-size: 8rem;
+    section#projetos .header .wrapper h2 {
+        font-size: 7.5rem;
     }
 
     section#projetos .header p {
@@ -111,11 +132,34 @@
         display: flex;
         justify-content: end;
     }
+
+    section#projetos .projeto .image img.desktop {
+      height: 90vh;
+      aspect-ratio: 16/19;
+      width: 100%;
+      border-radius: 0;
+    }
 }
 
 @media (min-width: 1400px) {
     .wrapper {
       width: min(140rem, 100%);
+    }
+
+    section#projetos .projeto .image img.desktop {
+      height: 100vh;
+      aspect-ratio: 16/21;
+      width: 100%;
+      border-radius: 0;
+      filter: brightness(.7);
+    }
+
+    #projetos .projeto .image img.mobile {
+      position: absolute;
+      width: 35%;
+      bottom: 10%;
+      box-shadow:  8px 8px 15px #11111100,
+      -10px -10px 45px #171717d3;
     }
   }
   

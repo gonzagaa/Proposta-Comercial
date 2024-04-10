@@ -1,5 +1,5 @@
 #home {
-  background: linear-gradient(to bottom, #000, #121212);
+  background: var(--gradient-black);
   height: 100vh;
   overflow: hidden;
   
