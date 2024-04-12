@@ -58,6 +58,8 @@
     align-items: center;
     flex-direction: column;
     border-top: 5px solid #0000001f;
+
+    position: relative;
 }
 
 #projetos .projeto .content {
