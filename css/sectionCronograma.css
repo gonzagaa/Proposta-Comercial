@@ -158,6 +158,9 @@
         mask-image: linear-gradient(to right, #000, #00000050 ,transparent 100%);
         border-radius: 1rem;
         border: 2px solid var(--color-text);
+
+        aspect-ratio: 16/9;
+        object-fit: cover;
     }
 }
 
