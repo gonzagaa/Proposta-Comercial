@@ -42,6 +42,7 @@
     top: 50%;
     transform: translate(0, -50%);
     left: -1.5rem;
+    opacity: .6;
 }
 
 #cronograma .topics h3 {
@@ -72,6 +73,10 @@
     margin-top: -3rem;
 }
 
+#cronograma .topics img {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .wrapper {
         width: min(76rem, 100%);
@@ -84,7 +89,7 @@
     }
 
     section#cronograma {
-        min-height: initial;
+        min-height: 100vh;
     }
 
     section#cronograma header h2 {
@@ -141,6 +146,18 @@
         position: absolute;
         left: initial;
         top: -13rem;
+    }
+
+    section#cronograma .topics img {
+        display: inherit;
+        position: absolute;
+        top: 100%;
+        margin-top: 5rem;
+        width: 20%;
+        margin-left: -3rem;
+        mask-image: linear-gradient(to right, #000, #00000050 ,transparent 100%);
+        border-radius: 1rem;
+        border: 2px solid var(--color-text);
     }
 }
 
