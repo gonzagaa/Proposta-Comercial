@@ -144,7 +144,7 @@ html {
 
 ::-webkit-scrollbar-thumb {
   width: .6rem;
-  background: var(--gradient);
+  background: linear-gradient(to bottom, #d8d8d8, #00000000);
   border-radius: 1rem;
 }
 
