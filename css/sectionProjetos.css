@@ -51,7 +51,7 @@
 }
 
 #projetos .projeto {
-    background: #000;
+    background: var(--black-color);
 
     display: flex;
     justify-content: center;

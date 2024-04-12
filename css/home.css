@@ -17,7 +17,7 @@
 }
 
 #home h1 {
-  color: #ffffff;
+  color: var(--color-text);
   font-size: 4.5rem;
 
   position: absolute;
