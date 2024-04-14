@@ -6,7 +6,6 @@
     <title>LSB Digital - Agência de Marketing</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="./assets/ICONE LSB.png" type="image/x-icon">
@@ -72,17 +71,16 @@
     <section id="projetos">
       <div class="header">
         <div class="wrapper">
-          <div class="content">
+          <img class="pattern" src="./assets/pattern.svg" alt="">
             <header data-aos="fade-up">
               <h2>PROJETOS</h2>
-              <p >Conheça algum dos projetos desenvolvidos por mim</p>
+              <p>Conheça algum dos projetos desenvolvidos por mim</p>
               <ion-icon name="chevron-down-outline"></ion-icon>
             </header>  
-          </div>
         </div>
       </div>
 
-      <div  class="projeto um">
+      <div class="projeto um">
         <div class="wrapper">
           <div class="content">
             <div class="text">
@@ -102,7 +100,7 @@
         </div>
       </div>
 
-      <div  class="projeto dois">
+      <div class="projeto dois">
         <div class="wrapper">
           <div class="content">
             <div class="text">
@@ -268,14 +266,41 @@
 
     <section id="pagamento">
       <div class="wrapper">
-        <header>
-          <h2>PAGAMENTO</h2>
-        </header>
-
         <div class="content">
-          <p><span>Pix</span> (50% antes - 50% depois)</p>
-          <p><span>Cartão de Crédito</span>(em até 12x com juros)</p>
+          <div data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom" class="text">
+            <h2>Formas de pagamento</h2>
+          </div>
+
+          <div class="cards">
+
+            <div data-aos="fade-up-left" class="card">
+              <span>PIX</span>
+              <img class="icone" src="./assets/icone pix.svg" alt="">
+              <p>Antecipado c/ 10% de desconto</p>
+            </div>
+
+            <div data-aos="fade-up-left" class="card">
+              <span>PIX</span>
+              <img class="icone" src="./assets/icone pix.svg" alt="">
+              <p>50% antes - 50% depois</p>
+            </div>
+
+            <div data-aos="fade-up-left" class="card">
+              <span>CREDITO</span>
+              <img class="icone" src="./assets/icone credito.svg" alt="">
+              <p>Cartão de crédito em até 12x c/ juros</p>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section id="obrigado">
+      <div class="wrapper">
+        <h2>OBRIGADO</h2>
+        <p>por chegar até aqui. Em caso de dúvidas, estou disposto para conversarmos.</p>
+        <a href="#"><button> <ion-icon name="arrow-back-outline"></ion-icon> Voltar ao whatsapp</button></a>
       </div>
     </section>
     
@@ -410,9 +435,6 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html> 

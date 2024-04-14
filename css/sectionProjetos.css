@@ -4,14 +4,26 @@
     position: sticky;
     top: 0;
     z-index: 10;
+
+    overflow: hidden;
 }
 
 #projetos .header {
-    background: var(--color-text);
+    background: var(gradient-black);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2;
+}
+
+#projetos .header img.pattern {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .1;
+  filter: brightness(0) invert(100%);
+  width: 100%;
 }
 
 #projetos .header::before {
@@ -28,9 +40,11 @@
 #projetos .header h2 {
     font-size: 4.5rem;
     margin-bottom: 1rem;
+    color: var(--color-text);
 }
 
 #projetos .header p {
+    color: var(--color-text);
     font-family: var(--interV);
     font-weight: 500;
     font-size: 1.6rem;
@@ -40,7 +54,7 @@
 #projetos .header ion-icon {
   margin-top: 2rem;
   font-size: 4rem;
-
+  color: var(--color-text);
   animation: arrow infinite ease-in-out 3s;
 }
 
@@ -57,9 +71,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-top: 5px solid #0000001f;
 
-    position: relative;
+    box-shadow: 0 -70px 40px #0000007d;
 }
 
 #projetos .projeto .content {
@@ -154,6 +167,10 @@
         grid-template-columns: 1fr 1fr;
         align-items: center;
       }
+
+    section#projetos .header img.pattern {
+      width: initial;
+    }
 
     section#projetos .projeto .content .text h2 {
         font-size: 8rem;
