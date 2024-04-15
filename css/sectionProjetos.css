@@ -64,6 +64,10 @@
   }
 }
 
+#projetos .projeto:nth-child(2) {
+  box-shadow: 0 -70px 40px #00000018;
+}
+
 #projetos .projeto {
     background: var(--black-color);
 

@@ -40,7 +40,7 @@
 #pagamento .cards .card span {
     font-size: 6rem;
     color: var(--color-text);
-    opacity: .05;
+    opacity: .09;
 }
 
 #pagamento .cards .card img.icone {

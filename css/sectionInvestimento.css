@@ -16,8 +16,9 @@
 
 #investimento header h2 {
     color: var(--color-text);
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     margin-bottom: 5rem;
+    text-align: left;
 }
 
 #investimento .topics {

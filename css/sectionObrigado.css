@@ -34,7 +34,7 @@
     padding: 1rem 3rem;
     border-radius: 2rem;
     color: var(--color-text);
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.8rem;
 
     display: flex;
@@ -126,8 +126,8 @@
     section#obrigado img.pattern {
         position: absolute;
         width: 60rem;
-        opacity: .2;
-        right: 2%;
+        opacity: .05;
+        right: 5%;
         z-index: -1;
 
         animation: pattern infinite 100s linear;
@@ -201,12 +201,10 @@
     @keyframes pattern {
         0% {
             transform: rotate(0);
-            opacity: .2;
         }
 
         100% {
             transform: rotate(360deg);
-            opacity: 0;
         }
     }
   }
