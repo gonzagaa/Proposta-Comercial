@@ -30,8 +30,8 @@
   
 #home h1.line {
     color: transparent;
-    -webkit-text-stroke: 1px #ffffffe8;
-    text-stroke: 1px #ffffffc5;
+    -webkit-text-stroke: 1px var(--color-text);
+    text-stroke: 1px #d8d8d8;
     z-index: 3;
 }
 
